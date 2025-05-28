@@ -1,103 +1,74 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technologické riziká</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            margin: 0;
-            padding: 0;
-            background-color: #dcf5ff;
-            color: #567683;
-        }
-        header {
-            background-color: #dcf5ff;
-            color: #567683;
-            text-align: center;
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeIn 1s ease-out forwards;
-        }
-        h2, p, ul, img {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-            transform: scale(0.8);
-            animation: fadeInScale 0.8s ease-out forwards 0.6s;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeInScale {
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technologické riziká</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dcf5ff;
+      color: #567683;
+    }
+    header {
+      background-color: #dcf5ff;
+      color: #567683;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      font-weight: normal;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>Technologické riziká</header>
-    <div class="container">
-        <h2>Škodlivý softvér (Malvér)</h2>
-        <img src="https://www.kaspersky.com/content/en-global/images/repository/isc/2021/malware-image.jpg" alt="Malvér varovanie">
-        <p>Malvér zahŕňa širokú škálu škodlivých programov, ktoré môžu infikovať zariadenia a spôsobovať rôzne druhy poškodení. Existujú rôzne druhy malvéru, ako sú vírusy, trójske kone, ransomvér alebo rootkity. Malvér sa často šíri prostredníctvom infikovaných súborov, emailových príloh alebo škodlivých webových stránok. Tento typ softvéru môže ohroziť nielen jednotlivcov, ale aj celé organizácie, ktoré sa môžu stať obeťami kybernetických útokov. Ochrana pred malvérom zahŕňa používanie kvalitného antivírusového softvéru a obozretnosť pri otváraní neznámych súborov.</p>
-        
-        <h2>Počítačové červy</h2>
-        <img src=obrazky/cerv.jpg alt="Počítačový červ">
-        <p>Počítačové červy sa šíria bez potreby ľudskej interakcie a môžu spôsobiť veľké škody. Na rozdiel od vírusov sa červy dokážu množiť samostatne a šíriť sa po sieti, pričom často spôsobujú preťaženie systémov a sieťovej infraštruktúry. Niektoré červy môžu navyše inštalovať ďalší malvér do infikovaných zariadení. Tento typ škodlivého softvéru dokáže narušiť fungovanie celých podnikov a inštitúcií, pričom ich oprava môže byť nákladná a časovo náročná. Prevencia zahŕňa pravidelné aktualizácie softvéru a používanie firewallov.</p>
-        
-        <h2>Spyware</h2>
-        <img src="https://www.avg.com/-/media/AVG-Content/Images/How-To/spyware-img-01.png" alt="Spyware">
-        <p>Spyware tajne sleduje aktivity používateľa a môže odcudziť citlivé informácie, ako sú heslá, bankové údaje alebo osobné súbory. Spyware sa často inštaluje bez vedomia používateľa prostredníctvom nelegitímneho softvéru alebo škodlivých reklám. Tento druh softvéru môže sledovať každý pohyb používateľa na internete a odosielať tieto informácie kyberzločincom. Často sa používa na cielenú reklamu, ale v extrémnych prípadoch môže viesť k finančným stratám alebo identitným podvodom. Ochrana spočíva v používaní antispywarových nástrojov a obmedzení sťahovania neoverených programov.</p>
-        
-        <h2>Adware</h2>
-        <img src="elita.jpg" alt="Adware">
-        <p>Adware zobrazuje nežiaduce reklamy a môže presmerovať používateľa na škodlivé webové stránky. Tento typ softvéru môže tiež spomaľovať výkon zariadenia a sledovať online aktivity používateľa na účely cielených reklám. Často je súčasťou bezplatného softvéru a využíva sa na generovanie príjmov pre vývojárov. Adware však môže byť obťažujúci a niekedy aj nebezpečný, keďže presmerovanie na podvodné stránky môže viesť k ďalšej infekcii. Prevencia zahŕňa blokovanie reklám a používanie bezpečnostných nástrojov.</p>
-        
-        <h2>Ochrana pred technologickými hrozbami</h2>
-        <img src="3889.jpg">
-        <p>Ak chcete byť v bezpečí pred technologickými hrozbami, mali by ste dodržiavať nasledujúce zásady:</p>
-        <ul>
-            <li>Pravidelne aktualizujte svoj operačný systém a softvér.</li>
-            <li>Používajte silné a jedinečné heslá pre každý účet.</li>
-            <li>Vyhnite sa otváraniu neznámych emailových príloh a odkazov.</li>
-            <li>Používajte antivírusový a antimalvérový softvér.</li>
-            <li>Pravidelne zálohujte svoje dôležité súbory.</li>
-            <li>Dávajte si pozor na phishingové útoky a podozrivé správy.</li>
-            <li>Nezdieľajte svoje osobné údaje na nedôveryhodných stránkach.</li>
-            <li>Ochrana súkromia na internete je kľúčová – používajte VPN a anonymizačné nástroje.</li>
-        </ul>
-    </div>
+  <header>Technologické riziká</header>
+  <div class="container">
+    <h2>Škodlivý softvér (Malvér)</h2>
+    <img src="https://www.kaspersky.com/content/en-global/images/repository/isc/2021/malware-image.jpg" alt="Malvér varovanie" />
+    <p>Malvér zahŕňa širokú škálu škodlivých programov...</p>
+
+    <h2>Počítačové červy</h2>
+    <img src="https://yourdomain.com/obrazky/cerv.jpg" alt="Počítačový červ" />
+    <p>Počítačové červy sa šíria bez potreby ľudskej interakcie...</p>
+
+    <h2>Spyware</h2>
+    <img src="https://www.avg.com/-/media/AVG-Content/Images/How-To/spyware-img-01.png" alt="Spyware" />
+    <p>Spyware tajne sleduje aktivity používateľa...</p>
+
+    <h2>Adware</h2>
+    <img src="https://yourdomain.com/obrazky/elita.jpg" alt="Adware" />
+    <p>Adware zobrazuje nežiaduce reklamy a môže presmerovať používateľa...</p>
+
+    <h2>Ochrana pred technologickými hrozbami</h2>
+    <img src="https://yourdomain.com/obrazky/3889.jpg" alt="Ochrana" />
+    <p>Ak chcete byť v bezpečí pred technologickými hrozbami, mali by ste dodržiavať tieto zásady:</p>
+    <ul>
+      <li>Pravidelne aktualizujte softvér</li>
+      <li>Používajte silné heslá</li>
+      <li>Vyhnite sa podozrivým emailom</li>
+      <li>Antivírusy sú must-have!</li>
+    </ul>
+  </div>
 </body>
 </html>
+
 
