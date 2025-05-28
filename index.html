@@ -2,158 +2,105 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Technologické riziká – Deep Dive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologické riziká IT</title>
     <style>
         body {
-            background-color: #eef6f9;
             font-family: Arial, sans-serif;
-            color: #333;
-            margin: 20px;
+            background-color: #eef6f8;
+            color: #2c3e50;
             line-height: 1.6;
+            margin: 0;
+            padding: 20px;
         }
-        h1, h2, h3 {
-            color: #1f5673;
-        }
-        h1 {
+        header {
             text-align: center;
-            margin-bottom: 40px;
+            padding: 10px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #1c2e4a;
         }
-        .sekcia {
-            margin-bottom: 50px;
+        .section {
+            margin: 40px 0;
         }
-        .obsah {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
+        h2 {
+            color: #1a252f;
         }
-        .obsah img {
-            width: 180px;
-            border-radius: 8px;
-            flex-shrink: 0;
+        img {
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background: white;
         }
-        ul {
-            margin-top: 10px;
-        }
-        .box {
-            background: #fff;
-            border-left: 4px solid #1f5673;
-            padding: 10px 15px;
-            margin: 20px 0;
-        }
-        .quote {
-            font-style: italic;
-            margin: 15px 0;
+        .content {
+            max-width: 800px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-
-    <h1>Technologické riziká – Deep Dive</h1>
-
-    <div class="sekcia">
-        <h2>1. Spyware a Adware</h2>
-        <div class="obsah">
-            <img src="image-removebg-preview (19).png" alt="Spyware">
-            <div>
-                <p>
-                    Spyware sa ticho nainštaluje na váš počítač či telefón a začne sledovať všetko, čo na ňom robíte. Sníma stlačenia kláves, navštívené weby, dokonca aj súbory, ktoré otvárate. Dáta odosiela útočníkovi, ktorý môže získať prístup k heslám a citlivým údajom.
-                </p>
-                <p>
-                    Adware je “priateloveľký” spam – zobrazí vám samovoľne reklamy v okne prehliadača alebo ako vyskakovacie okná na ploche. Čím viac ho máte, tým je váš systém pomalší a náchylnejší na ďalšie infekcie.
-                </p>
-                <div class="box">
-                    <strong>Tip:</strong> Pred inštaláciou každého nového programu si vždy prečítajte recenzie a povolenia, ktoré žiada.
-                </div>
-            </div>
+    <header>Technologické riziká informačných technológií</header>
+    <div class="content">
+        <div class="section">
+            <h2>1. Škodlivý softvér (Malvér)</h2>
+            <img src="risk_image_3.png" alt="Malvér">
+            <p>
+                Škodlivý softvér, alebo jednoducho malvér, je akýkoľvek softvér navrhnutý s cieľom poškodiť, narušiť, ukradnúť alebo zničiť údaje či systémy. Sem patrí obrovské množstvo druhov – od vírusov, cez trójske kone, až po ransomvér.
+                Tento softvér sa často šíri prostredníctvom príloh v e-mailoch, infikovaných súborov alebo podozrivých webstránok. 
+                <br><br>
+                Riziká? Môžu byť enormné – stratené dáta, zničené systémy, či dokonca finančné škody. Dôležité je používať antivírusy, zálohovať dáta a najmä byť opatrný.
+            </p>
         </div>
-    </div>
 
-    <div class="sekcia">
-        <h2>2. Malvér</h2>
-        <div class="obsah">
-            <img src="4373561.jpg" alt="Malvér">
-            <div>
-                <p>
-                    Malvér je generický pojem pre akýkoľvek škodlivý softvér: od tradičných vírusov cez trójske kone až po ransomware, ktorý vám šifruje dáta a žiada výkupné.
-                </p>
-                <p>
-                    Dôsledky môžu byť katastrofálne – stratíte prístup k rodinným fotkám, dokumentom alebo dokonca firemným databázam.  
-                    Často sa šíri cez infikované prílohy v emailoch alebo falošné inštalátory populárneho softvéru.
-                </p>
-                <h3>Príklady útokov:</h3>
+        <div class="section">
+            <h2>2. Spyware</h2>
+            <img src="risk_image_1.png" alt="Spyware">
+            <p>
+                Spyware je tichý nepriateľ. Beží na pozadí, sleduje tvoje aktivity – kam klikáš, čo píšeš, aké heslá zadávaš. Môže ťa totálne sledovať bez toho, aby si o tom vedel. Používateľ si ho často ani nevšimne.
+                <br><br>
+                Môže to znieť ako z filmu, ale je to realita. Takýto softvér môže zaznamenávať každé tvoje kliknutie. A keď sa tvoje heslá dostanú do nesprávnych rúk – nastáva problém. Ochrana? Antispywarové nástroje, bezpečný softvér a hlavne neklikať na všetko, čo bliká.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>3. Počítačové červy</h2>
+            <img src="risk_image_2.png" alt="Počítačové červy">
+            <p>
+                Počítačové červy sú ako vírusy, ale horšie. Prečo? Pretože sa šíria úplne samé. Bez tvojho kliknutia, bez tvojho povolenia.
+                <br><br>
+                Môžu sa rozšíriť do celej siete – napríklad v škole alebo firme – a zrazu všetko padá. Systémy sa spomaľujú, počítače sa restartujú. V niektorých prípadoch môžu červy slúžiť aj ako brána pre ďalšie útoky. Najlepšia obrana? Pravidelné aktualizácie, záplaty a silná sieťová ochrana.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>4. Adware</h2>
+            <img src="risk_image_1.png" alt="Adware">
+            <p>
+                Adware je...otravný. Vyskakuje ti reklama, stránka sa presmeruje, zariadenie spomaľuje. Väčšinou nejde o niečo extrémne nebezpečné – ale aj cez reklamy sa môže dostať do systému malvér.
+                <br><br>
+                Často sa nachádza v nelegálnych alebo free softvéroch, ktoré si niekto stiahne bez rozmýšľania. Preto – pozor na to, čo inštaluješ. Používaj blokovače reklám a nevypínaj antivírus pri sťahovaní.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>5. Ako sa chrániť?</h2>
+            <p>
+                Takže – ako sa chrániť pred týmto všetkým? Tu sú základné pravidlá:
                 <ul>
-                    <li><strong>WannaCry (2017):</strong> poškodenie nemocníc a firiem vo viac než 150 krajinách.</li>
-                    <li><strong>NotPetya (2018):</strong> škody za miliardy dolárov, zamerané na ukrajinské siete.</li>
+                    <li>Aktualizuj softvér a operačný systém.</li>
+                    <li>Neklikaj na podozrivé odkazy alebo prílohy.</li>
+                    <li>Používaj antivírus a antispyware softvér.</li>
+                    <li>Zálohuj si dáta pravidelne!</li>
+                    <li>Silné heslá a dvojfaktorová autentifikácia sú MUST.</li>
                 </ul>
-                <div class="quote">
-                    „Jedna kvapka neopatrnosti stačí na to, aby ste prišli o všetko.“  
-                </div>
-            </div>
+            </p>
         </div>
     </div>
-
-    <div class="sekcia">
-        <h2>3. Počítačové červy</h2>
-        <div class="obsah">
-            <img src="cerv.jpg" alt="Červ">
-            <div>
-                <p>
-                    Na rozdiel od bežných vírusov červy nepotrebujú ľudskú interakciu – dokážu sa samé šíriť cez siete. Raz sa dostanú do jedného zariadenia, a potom už „lezú“ do ďalších.
-                </p>
-                <p>
-                    Ich cieľom je často zahltiť servery či získať prístup do firemných sietí pre ďalšie útoky. Sú rýchle a sofistikované, mnohé z nich majú zabudované moduly na inštaláciu ďalšieho malvéru.
-                </p>
-                <h3>Fascinujúca štatistika:</h3>
-                <ul>
-                    <li>Prvý počítačový červ „Morris“ (1988) zasiahol okolo 6 000 počítačov za menej ako 24 hodín.</li>
-                    <li>Rýchlosť šírenia môže dosiahnuť stovky zariadení za sekundu v rámci korporátnych sietí.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="sekcia">
-        <h2>4. Budúcnosť hrozieb a AI</h2>
-        <div class="obsah">
-            <img src="4373561.jpg" alt="AI hrozby">
-            <div>
-                <p>
-                    S postupom umelej inteligencie sa zvyšuje riziko „inteligentného malvéru“, ktorý sa dokáže adaptovať na bezpečnostné opatrenia.  
-                    Útočníci už dnes používajú botnety riadené AI na skríning zraniteľností v reálnom čase.
-                </p>
-                <p>
-                    Budúcnosť prináša aj nové formy útokov: deepfake phishing, automatizované útoky na IoT zariadenia či kompromitáciu dát v cloude.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="sekcia">
-        <h2>5. Ako sa bezpečne chrániť?</h2>
-        <ul>
-            <li>Používajte spoľahlivý antivírus a aktualizujte ho denne.</li>
-            <li>Zapnite si firewall – v operačnom systéme aj na routeri.</li>
-            <li>Nevyklikávajte nič od neznámych odosielateľov.</li>
-            <li>Používajte správcu hesiel a jedinečné heslá pre každú službu.</li>
-            <li>Pravidelné zálohy na externé disky aj do cloudu.</li>
-            <li>Vzdelávajte sa – sledujte oficiálne blogy bezpečnostných expertov.</li>
-        </ul>
-        <div class="box">
-            <strong>Bonusový nástroj:</strong> <em>Have I Been Pwned</em> – zistíte, či unikli vaše prihlásenia.
-        </div>
-    </div>
-
-    <div class="sekcia">
-        <h2>6. Zdroje a ďakujem</h2>
-        <p>
-            1. Kaspersky Threat Reports, 2022<br>
-            2. Europol Internet Organised Crime Reports, 2021<br>
-            3. oficiálne dokumenty Microsoft Security Intelligence<br>
-        </p>
-        <p class="quote">Ďakujem za pozornosť a držím palce, nech sú vaše dáta vždy v bezpečí! 🙌</p>
-    </div>
-
 </body>
+</html>
+
 </html>
 
 
