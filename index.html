@@ -2,66 +2,81 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technologické riziká</title>
     <style>
         body {
-            font-family: Georgia, serif;
-            background-color: #dcf5ff;
-            color: #567683;
-            margin: 0;
-            padding: 0;
+            background-color: #e6f2f5;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
         }
-        header {
-            background-color: #dcf5ff;
+
+        h1 {
             text-align: center;
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
+            color: #2a6d7b;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
+
+        .sekcia {
+            margin-bottom: 30px;
         }
-        img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
+
+        .obsah {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .obsah img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        ul {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <header>Technologické riziká</header>
-    <div class="container">
-        <h2>Škodlivý softvér (Malvér)</h2>
-        <img src="image-removebg-preview (19).png" alt="Malvér">
-        <p>Malvér zahŕňa škodlivé programy ako vírusy, trójske kone alebo ransomvér. Infikuje zariadenia cez emaily, súbory alebo weby a môže napáchať veľké škody. Ochrana zahŕňa antivírusy a opatrnosť pri otváraní príloh.</p>
-        
+
+    <h1>Technologické riziká</h1>
+
+    <div class="sekcia">
+        <h2>Spyware a Adware</h2>
+        <div class="obsah">
+            <img src="image-removebg-preview (19).png" alt="Spyware">
+            <p>Spyware sleduje tvoju aktivitu a posiela údaje bez povolenia. Adware ti nonstop zobrazuje reklamy. Sú otravné a môžu byť aj nebezpečné.</p>
+        </div>
+    </div>
+
+    <div class="sekcia">
+        <h2>Malvér</h2>
+        <div class="obsah">
+            <img src="4373561.jpg" alt="Malvér">
+            <p>Malvér je škodlivý softvér ako vírusy, trójske kone či ransomvér. Vie ti zničiť dáta alebo zablokovať počítač.</p>
+        </div>
+    </div>
+
+    <div class="sekcia">
         <h2>Počítačové červy</h2>
-        <img src="cerv.jpg" alt="Počítačový červ">
-        <p>Červy sa šíria bez pomoci človeka a preťažujú siete. Môžu inštalovať ďalší malvér a poškodiť systémy. Pomáha aktualizovaný softvér a firewall.</p>
+        <div class="obsah">
+            <img src="cerv.jpg" alt="Červ">
+            <p>Počítačové červy sa samé šíria cez siete a môžu spôsobiť spomalenie systému alebo ďalšie infekcie.</p>
+        </div>
+    </div>
 
-        <h2>Adware a Spyware</h2>
-        <img src="4373561.jpg" alt="Spyware a Adware">
-        <p>Adware zobrazuje nechcené reklamy, spyware tajne sleduje používateľa. Oboje môžu byť nebezpečné. Prevencia: blokovače reklám a antispyware softvér.</p>
-
-        <h2>Ochrana pred hrozbami</h2>
-        <p>Odporúčania:</p>
+    <div class="sekcia">
+        <h2>Ochrana</h2>
         <ul>
-            <li>Aktualizuj softvér a OS</li>
-            <li>Silné heslá</li>
-            <li>Otváraj len dôveryhodné prílohy a odkazy</li>
-            <li>Používaj antivírus a firewall</li>
-            <li>Zálohuj súbory</li>
-            <li>Daj si pozor na phishing</li>
+            <li>Používaj antivírus</li>
+            <li>Aktualizuj systém</li>
+            <li>Neklikaj na čudné odkazy</li>
+            <li>Silné heslá sú základ</li>
+            <li>Zálohuj svoje dáta</li>
         </ul>
     </div>
+
 </body>
 </html>
+
 
