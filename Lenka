@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Lenka ♡ A Birthday Spell</title>
+
+<!-- Gothic & medieval fonts -->
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+:root {
+    --black: #100d12;
+    --purple: #25172c;
+    --plum: #49304d;
+    --pink: #c99ba9;
+    --rose: #e4b8c5;
+    --cream: #eadbc9;
+    --gold: #b99a69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.12;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.3'/%3E%3C/svg%3E");
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight: normal;
+}
+
+.italic {
+    font-style: italic;
+    color: var(--rose);
+}
+
+/* DECORATIONS */
+
+.ornament {
+    color: var(--gold);
+    letter-spacing: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.divider {
+    width: 150px;
+    height: 1px;
+    background: var(--gold);
+    margin: 25px auto;
+    opacity: .6;
+}
+
+.small-caps {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 11px;
+    color: var(--pink);
+}
+
+/* NAVIGATION */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.nav-logo {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 27px;
+    color: var(--rose);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 80px;
+    background:
+        radial-gradient(ellipse at center, #39243e 0%, #1b121f 45%, #100d12 80%);
+}
+
+.hero::before,
+.hero::after {
+    content: "✦";
+    position: absolute;
+    color: var(--gold);
+    font-size: 35px;
+    opacity: .6;
+}
+
+.hero::before {
+    top: 22%;
+    left: 15%;
+}
+
+.hero::after {
+    bottom: 20%;
+    right: 15%;
+}
+
+.hero-content {
+    max-width: 850px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--gold);
+    padding: 7px;
+    margin-bottom: 35px;
+    background: var(--purple);
+    box-shadow: 0 0 40px #b99a6930;
+}
+
+.hero h1 {
+    font-size: clamp(65px, 12vw, 130px);
+    line-height: .95;
+    color: var(--rose);
+    text-shadow: 0 0 35px #c99ba930;
+    margin: 25px 0;
+}
+
+.hero-subtitle {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: clamp(18px, 3vw, 25px);
+    color: var(--cream);
+    opacity: .85;
+}
+
+.hero-date {
+    margin-top: 35px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.scroll {
+    position: absolute;
+    bottom: 30px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--pink);
+    animation: float 2s infinite ease-in-out;
+}
+
+/* INTRO */
+
+.intro {
+    padding: 120px 8%;
+    text-align: center;
+    background: var(--black);
+}
+
+.section-title {
+    font-size: clamp(45px, 7vw, 75px);
+    color: var(--rose);
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    max-width: 650px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #d9c8c7;
+}
+
+/* PHOTO GALLERY */
+
+.gallery {
+    padding: 100px 8%;
+    background: #19121b;
+    text-align: center;
+}
+
+.gallery-grid {
+    max-width: 1050px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.photo-frame {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #70546a;
+    background: #241a27;
+    transition: .4s;
+}
+
+.photo-frame:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    border-color: var(--gold);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-caption {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--rose);
+    padding: 15px 5px 7px;
+}
+
+/* LETTER */
+
+.letter-section {
+    padding: 120px 20px;
+    text-align: center;
+    background: radial-gradient(ellipse at center, #332039, #100d12 75%);
+}
+
+.letter-card {
+    max-width: 680px;
+    margin: 50px auto 0;
+    padding: 55px 50px;
+    background: #e8d9c5;
+    color: #302333;
+    position: relative;
+    box-shadow: 0 0 50px #00000060;
+    transform: rotate(-1deg);
+}
+
+.letter-card::before {
+    content: "✧";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 25px;
+    color: #9b7580;
+}
+
+.letter-card::after {
+    content: "✧";
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 25px;
+    color: #9b7580;
+}
+
+.letter-card h3 {
+    font-size: 42px;
+    color: #513b50;
+    margin-bottom: 25px;
+}
+
+.letter-card p {
+    font-family: 'IM Fell English', serif;
+    font-size: 19px;
+    line-height: 1.9;
+    white-space: pre-line;
+}
+
+.signature {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 35px;
+    margin-top: 30px;
+    color: #65445f;
+}
+
+/* MEMORY QUOTES */
+
+.quotes {
+    padding: 100px 8%;
+    text-align: center;
+    background: #19121b;
+}
+
+.quote-box {
+    max-width: 750px;
+    margin: 50px auto 0;
+    padding: 50px 30px;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.quote-box p {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: clamp(23px, 4vw, 36px);
+    line-height: 1.5;
+    color: var(--rose);
+}
+
+/* FINAL */
+
+.final-section {
+    min-height: 75vh;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(#100d12a8, #100d12e8),
+        url('YOUR_FINAL_BACKGROUND_IMAGE_HERE.jpg') center/cover;
+}
+
+.final-section h2 {
+    font-size: clamp(55px, 10vw, 100px);
+    color: var(--rose);
+    margin: 20px 0;
+}
+
+.final-section p {
+    font-family: 'IM Fell English', serif;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.final-star {
+    font-size: 35px;
+    color: var(--gold);
+    margin: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: #0b090d;
+    color: #9e8598;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* FLOATING STARS */
+
+.star {
+    position: fixed;
+    color: var(--gold);
+    pointer-events: none;
+    z-index: 20;
+    animation: sparkle 3s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(.5) rotate(0deg); }
+    50% { opacity: .7; transform: scale(1.2) rotate(90deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    nav {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 10px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .photo-frame img {
+        height: 400px;
+    }
+
+    .letter-card {
+        padding: 45px 25px;
+    }
+
+    .intro, .gallery, .quotes {
+        padding: 80px 7%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo">✧ Lenka ✧</div>
+
+    <div class="nav-links">
+        <a href="#about">A little spell</a>
+        <a href="#memories">Memories</a>
+        <a href="#letter">A letter</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <!-- Replace with your favourite portrait of Lenka -->
+        <img src="YOUR_HERO_PHOTO_HERE.jpg" class="hero-image" alt="A photograph of Lenka">
+
+        <div class="small-caps">A little celebration of magic</div>
+
+        <h1>Happy Birthday<br>Lenka</h1>
+
+        <p class="hero-subtitle">
+            For a soul too magical for an ordinary world.
+        </p>
+
+        <div class="ornament">✧ · ───── ♡ ───── · ✧</div>
+
+        <div class="hero-date">A day written in the stars</div>
+
+    </div>
+
+    <div class="scroll">↓ &nbsp; Enter the fairytale &nbsp; ↓</div>
+
+</section>
+
+<!-- INTRO -->
+<section class="intro" id="about">
+
+    <div class="small-caps">Chapter I · The birthday girl</div>
+
+    <div class="ornament">☾ ✧ ☽</div>
+
+    <h2 class="section-title">A rare kind of magic</h2>
+
+    <p class="intro-text">
+        Some people are simply made of a little more magic.
+        The kind that makes ordinary days feel like fairytales,
+        rainy afternoons feel romantic, and the world feel a
+        little less lonely.
+
+        <br><br>
+
+        Lenka, this little corner of the universe exists
+        because today, we celebrate you.
+    </p>
+
+    <div class="ornament">✧ · ♡ · ✧</div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="memories">
+
+    <div class="small-caps">Chapter II · Little fragments of forever</div>
+
+    <h2 class="section-title">Our little universe</h2>
+
+    <p class="intro-text">
+        A collection of moments, memories and beautiful nonsense.
+    </p>
+
+    <div class="gallery-grid">
+
+        <!-- PHOTO 1 -->
+        <div class="photo-frame">
+            <img src="YOUR_PHOTO_1.jpg" alt="A favourite memory">
+            <div class="photo-caption">A moment worth keeping ♡</div>
+        </div>
+
+        <!-- PHOTO 2 -->
+        <div class="photo-frame">
+            <img src="YOUR_PHOTO_2.jpg" alt="A favourite memory">
+            <div class="photo-caption">Partners in crime ✧</div>
+        </div>
+
+        <!-- PHOTO 3 -->
+        <div class="photo-frame">
+            <img src="YOUR_PHOTO_3.jpg" alt="A favourite memory">
+            <div class="photo-caption">Forever a favourite</div>
+        </div>
+
+        <!-- PHOTO 4 -->
+        <div class="photo-frame">
+            <img src="YOUR_PHOTO_4.jpg" alt="A favourite memory">
+            <div class="photo-caption">Beautiful chaos</div>
+        </div>
+
+        <!-- PHOTO 5 -->
+        <div class="photo-frame">
+            <img src="YOUR_PHOTO_5.jpg" alt="A favourite memory">
+            <div class="photo-caption">The world is ours</div>
+        </div>
+
+        <!-- PHOTO 6 -->
+        <div class="photo-frame">
+            <img src="YOUR_PHOTO_6.jpg" alt="A favourite memory">
+            <div class="photo-caption">Just one more memory</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUOTE -->
+<section class="quotes">
+
+    <div class="small-caps">A little reminder</div>
+
+    <div class="ornament">✧</div>
+
+    <div class="quote-box">
+        <p>
+            "May you always find magic in the mundane,
+            beauty in the strange, and stars even
+            on the darkest nights."
+        </p>
+    </div>
+
+    <div class="ornament">☾ ✧ ☽</div>
+
+</section>
+
+<!-- LETTER -->
+<section class="letter-section" id="letter">
+
+    <div class="small-caps">Chapter III · Something from the heart</div>
+
+    <h2 class="section-title">A letter for you</h2>
+
+    <div class="letter-card">
+
+        <h3>Dearest Lenka,</h3>
+
+        <p>
+        Happy birthday, my dear.
+
+        I hope this new chapter of your life brings you
+        everything your heart has been quietly wishing for.
+
+        I hope you never stop being unapologetically yourself.
+        Never lose your weirdness, your kindness, your humour
+        or all those little things that make you YOU.
+
+        Thank you for being part of my story.
+        For the laughter, the memories, the conversations
+        and all the moments that somehow became my favourites.
+
+        I hope life treats you as beautifully as you deserve.
+        May you find adventures worth remembering,
+        people worth keeping and reasons to smile every day.
+
+        Here's to another year of being wonderfully strange.
+
+        I love you endlessly. ♡
+        </p>
+
+        <div class="signature">With all my love,</div>
+
+        <!-- CHANGE THIS -->
+        <p style="font-family: 'Cormorant Garamond'; font-size: 22px; margin-top: 5px;">
+            Your favourite human
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FINAL SECTION -->
+<section class="final-section">
+
+    <div class="small-caps">And so, another chapter begins...</div>
+
+    <div class="final-star">✧ ☾ ✧</div>
+
+    <h2>Stay magical.</h2>
+
+    <p>
+        The universe is lucky to have you in it.
+    </p>
+
+    <div class="ornament">────── ♡ ──────</div>
+
+    <p style="font-size: 16px; letter-spacing: 3px;">
+        HAPPY BIRTHDAY, LENKA
+    </p>
+
+</section>
+
+<footer>
+    MADE WITH ♡ & A LITTLE BIT OF MAGIC
+    <br><br>
+    ✧ 2026 ✧
+</footer>
+
+<!-- FLOATING STARS SCRIPT -->
+<script>
+const symbols = ["✧", "⋆", "✦", "˚", "✩"];
+
+function createStar() {
+    const star = document.createElement("span");
+
+    star.className = "star";
+    star.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.top = Math.random() * 100 + "vh";
+    star.style.fontSize = (Math.random() * 12 + 8) + "px";
+    star.style.animationDelay = Math.random() * 3 + "s";
+
+    document.body.appendChild(star);
+
+    setTimeout(() => {
+        star.remove();
+    }, 4000);
+}
+
+setInterval(createStar, 500);
+</script>
+
+</body>
+</html>
